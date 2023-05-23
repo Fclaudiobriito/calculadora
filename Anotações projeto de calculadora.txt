@@ -1,0 +1,64 @@
+Anotações projeto de calculadora:
+
+- Para centralizar a div principal no meio da tela usamos uma nova forma: definimos 100% de height para o html e para o body. Quando utilizamos essa definição, estamos basciamente dizendo que queremos que ele ocupe toda a altura disponivel da janela do navegador. Isso é necessario para utilizarmos a propriedade seguinte, que combinadas, centraliza uma div no meio da tela. A propriedade a seguir é a seguinte: 
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+Estamos usando as propriedades "display: flex;" para criar um contêiner flexível e "justify-content: center;" e "align-items: center;" para centralizar o conteúdo verticalmente e horizontalmente dentro desse contêiner. O uso de "height: 100%;" no <html> e <body> é necessário para que o contêiner flexível abranja toda a altura disponível, o que permite que o conteúdo seja centralizado verticalmente. Vale ressaltar que essa abordagem de centralização vertical somente funciona corretamente em casos em que o conteúdo do <body> não ultrapassa a altura da janela do navegador. Caso contrário, o conteúdo será rolável e a centralização vertical não será aplicada. 
+
+Nota pessoal: Pensando em uma possível utilização no mundo real dessa abordagem, a mesma é pouco usual, visto que os sites hoje em dia em sua grande maioria ultrapassando o tamanho padrão da tela, por consequencia, utilizar tal método no dia a dia não é a maneira mais viável. Porém, no caso de formularios de logins, por exemplo, em que teremos paginas pequenas com somente uma div central, essa abordagem se torna mais usual.
+
+
+- Indo para o JavaScript, tivemos uma sugestão de ultilização para o script que não tinhamos visto antes: document.addEventListener('DOMContentLoaded', function() {
+});
+
+O evento acima garante que o código JavaScript seja executado somente após o carregamento completo do documento HTML, garantindo que todos os elementos estejam disponíveis para a manipulação.
+
+Para a atribuição de evento de clique em um botão, nos foi sugerido o metodo querySelector: "const botao1 = document.querySelector('#botao1');"
+
+O método "addEventListener()" foi complexo demais para nosso entendimento atual, anotado para estudar mais a respeito posteriormente.
+
+Seguimos para usar a função inline diretamente no atributo 'onclick' do botão para recolher o evento de clique 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
