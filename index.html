@@ -10,29 +10,40 @@
 </head>
 
 <body>
-    <div class="calculadora">
-        <h1>Calculadora</h1>
-        <input type="text" id="resultado" disabled>
-        <div class="operacoes">
-            <button id="botaoAd" onclick="handleClickBotaoAd()">+</button>
-            <button id="botaoSub">-</button>
-            <button id="botaoMult">*</button>
-            <button id="botaoDiv">/</button>
-        </div>
-        <div class="sup">
-            <button id="sete">7</button>
-            <button id="oito">8</button>
-            <button id="nove">9</button>
-        </div>
-        <div class="center">
-            <button id="quatro">4</button>
-            <button id="cinco">5</button>
-            <button id="seis">6</button>
-        </div>
-        <div class="inf">
-            <button id="um">1</button>
-            <button id="dois">2</button>
-            <button id="tres">3</button>
+    <div class="body">
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado">asfas</p>
+            <table>
+                <tr>
+                    <td><button class="botao">C</button></td>
+                    <td><button class="botao"><-</button></td>
+                    <td><button class="botao">/</button></td>
+                    <td><button class="botao">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao">7</button></td>
+                    <td><button class="botao">8</button></td>
+                    <td><button class="botao">9</button></td>
+                    <td><button class="botao">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao">4</button></td>
+                    <td><button class="botao">5</button></td>
+                    <td><button class="botao">6</button></td>
+                    <td><button class="botao">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao">1</button></td>
+                    <td><button class="botao">2</button></td>
+                    <td><button class="botao">3</button></td>
+                    <td rowspan="2"><button class="botao2">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao3">0</button></td>
+                    <td><button class="botao">.</button></td>
+                </tr>
+            </table>
         </div>
     </div>
 
